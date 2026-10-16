@@ -1,6 +1,9 @@
+
 #Лаба по ИПР 1: Git, ветвление
 
 ## 1.
+
+```bash
 git commit -am "Initional commit"
 git tag v1.0
 git commit -am "new knot"
@@ -21,6 +24,7 @@ git merge --no-ff feat-auth
 git tag merge-merged
 git commit -am "Back"
 git tag v1.2
+```
 
 >git commit — Создает комиит 
 git tag — Создает тег v1.0 на текущем коммите
@@ -39,7 +43,6 @@ git merge --no-ff — Выполняется слияние веток в тек
 Поставили тег merge-merged.
 Сделали коммит Back и поставили тег v1.2.
 
-
 ####Граф репозитория 1:
 ![Граф 1](img1.png)
 ![Граф 1](mer1.png)
@@ -57,6 +60,7 @@ gitGraph
 
 ## 2.
 
+```bash
 git commit -m "Initial commit"
 git tag v1.0
 
@@ -91,6 +95,7 @@ git tag v1.1.2
 
 git merge --no-ff hotfix-critical -m "merge hotfix-critical"
 git tag merge-merged
+```
 
 >Создали первый коммит в master и поставили тег v1.0.
 Сделали новый коммит и отметили его тегом v1.1.
@@ -130,6 +135,7 @@ gitGraph
 
 ## 3.
 
+```bash
 git commit -m "Initional commit"
 git tag v1.0
 git branch feature-usermgmt
@@ -157,6 +163,7 @@ git merge --no-ff release-v2 -m "My favorite laba"
 git tag merge-merged
 git commit -m "I'm tiared, can you pass me 5 please'
 git tag v2.0
+```
 
 >no fast-forward запрещает слияние просто пмеремещением указателя ветки
 
@@ -198,6 +205,7 @@ gitGraph
 
 ## 4.
 
+```bash
 git commit -m "Initional commit"
 git tag init
 
@@ -230,6 +238,7 @@ git commit -m "Damnnn"
 git checkout master
 git merge --no-ff feature-payment -m "Mergeeee"
 git tag merge-merged
+```
 
 >Создали первый коммит в master и поставили тег init.
 Сделали новый коммит Knot и отметили его тегом setup.
@@ -273,6 +282,7 @@ gitGraph
 
 ## 5.
 
+```bash
 git commit --allow-empty -m "initional ocmmit"
 git tag base
 
@@ -310,6 +320,7 @@ git tag merge-merged
 git commit --allow-empty -m "me"
 git merge --no-ff feature-api
 git tag merge-merged
+```
 
 
 >git merge --no-ff feature-ui — Выполняет слияние ветки UI с явным коммитом слияния
