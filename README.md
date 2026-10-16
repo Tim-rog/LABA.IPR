@@ -42,7 +42,7 @@ git merge --no-ff — Выполняется слияние веток в тек
 
 ####Граф репозитория 1:
 ![Граф 1](img1.png)
-![Граф 1](mer.png)
+![Граф 1](mer1.png)
 gitGraph
     commit id: "Initial commit" tag: "v1.0"
     commit id: "new knot" tag: "v1.1"
