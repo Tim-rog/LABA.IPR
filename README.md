@@ -46,6 +46,7 @@ git merge --no-ff — Выполняется слияние веток в тек
 #### Граф репозитория 1:
 ![Граф 1](img1.png)
 ![Граф 1](mer1.png)
+```mermaid
 gitGraph
     commit id: "Initial commit" tag: "v1.0"
     commit id: "new knot" tag: "v1.1"
@@ -57,6 +58,7 @@ gitGraph
     commit id: "back" tag: "hotfix"
     merge feat-auth tag: "merge-merged"
     commit id: "Back" tag: "v1.2"
+```
 
 ## 2.
 
@@ -113,6 +115,8 @@ git tag merge-merged
 #### Граф репозитория 2:
 ![Граф 2](img2.png)
 ![Граф 2](mer2.png)
+
+```mermaid
 gitGraph
     commit tag:"v1.0"
     commit tag:"v1.1"
@@ -132,6 +136,7 @@ gitGraph
     checkout main 
     commit tag:"v1.1.2"
     merge hotfix-critical tag:"MR-merged"
+```
 
 ## 3.
 
@@ -184,6 +189,7 @@ git tag v2.0
 #### Граф репозитория 3:
 ![Граф 3](img3.png)
 ![Граф 3](mer3.png)
+```mermaid
 gitGraph
     commit id: "Initial commit" tag: "v1.0"
     branch feature-usermgmt
@@ -202,6 +208,7 @@ gitGraph
     checkout master
     merge release-v2 tag: "merge-merged"
     commit id: "I'm tired, can you pass me 5 please" tag: "v2.0"
+```
 
 ## 4.
 
@@ -259,6 +266,7 @@ git tag merge-merged
 ![Граф 3](img4.png)
 ![Граф 3](mer4.png)
 
+```mermaid
 gitGraph
     commit id: "Initial commit" tag: "init"
     commit id: "Knot" tag: "setup"
@@ -279,6 +287,7 @@ gitGraph
     commit id: "Damnnn"
     checkout master
     merge feature-payment tag: "merge-merged"
+```
 
 ## 5.
 
@@ -330,6 +339,7 @@ git merge --no-ff feature-api — Выполняет слияние ветки A
 ![Граф 3](img5.png)
 ![Граф 3](mer5.png)
 
+``` mermaid
 gitGraph
     commit id: "initial commit" tag: "base"
     commit id: "me" tag: "core"
@@ -351,6 +361,7 @@ gitGraph
     merge feature-ui tag: "merge-merged"
     commit id: "me-after-ui"
     merge feature-api tag: "merge-merged-2"
+```
 
 >Создали первый коммит в master и поставили тег base.
 Сделали новый коммит me и отметили его тегом core.
