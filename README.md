@@ -45,8 +45,9 @@ git merge --no-ff — Выполняется слияние веток в тек
 
 #### Граф репозитория 1:
 ![Граф 1](img1.png)
-![Граф 1](mer1.png)
+
 ```mermaid
+%%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
     commit id: "Initial commit" tag: "v1.0"
     commit id: "new knot" tag: "v1.1"
@@ -114,9 +115,9 @@ git tag merge-merged
 
 #### Граф репозитория 2:
 ![Граф 2](img2.png)
-![Граф 2](mer2.png)
 
 ```mermaid
+%%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
     commit tag:"v1.0"
     commit tag:"v1.1"
@@ -188,8 +189,9 @@ git tag v2.0
 
 #### Граф репозитория 3:
 ![Граф 3](img3.png)
-![Граф 3](mer3.png)
+
 ```mermaid
+%%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
     commit id: "Initial commit" tag: "v1.0"
     branch feature-usermgmt
@@ -264,9 +266,9 @@ git tag merge-merged
 
 #### Граф репозитория 4:
 ![Граф 3](img4.png)
-![Граф 3](mer4.png)
 
 ```mermaid
+%%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
     commit id: "Initial commit" tag: "init"
     commit id: "Knot" tag: "setup"
@@ -337,9 +339,9 @@ git merge --no-ff feature-api — Выполняет слияние ветки A
 
 #### Граф репозитория 5:
 ![Граф 3](img5.png)
-![Граф 3](mer5.png)
 
 ``` mermaid
+%%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
     commit id: "initial commit" tag: "base"
     commit id: "me" tag: "core"
