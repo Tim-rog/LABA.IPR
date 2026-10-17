@@ -119,24 +119,24 @@ git tag merge-merged
 ```mermaid
 %%{init: {"gitGraph": {"mainBranchName": "master"}} }%%
 gitGraph
-    commit tag:"v1.0"
-    commit tag:"v1.1"
+    commit id: "Initial commit" tag: "v1.0"
+    commit id: "new knot" tag: "v1.1"
     branch develop
     checkout develop
-    commit
-    commit
-    checkout main 
-    commit tag:"v1.1.1"
+    commit id: "develop work 1"
+    commit id: "develop work 2"
+    checkout master
+    commit id: "master update" tag: "v1.1.1"
     checkout develop
-    commit
-    checkout main
+    commit id: "develop work 3"
+    checkout master
     branch hotfix-critical
     checkout hotfix-critical
-    commit tag:"MR-456"
-    commit
-    checkout main 
-    commit tag:"v1.1.2"
-    merge hotfix-critical tag:"MR-merged"
+    commit id: "critical fix start" tag: "merge-2"
+    commit id: "critical fix done"
+    checkout master
+    commit id: "master before merge" tag: "v1.1.2"
+    merge hotfix-critical tag: "merge-merged"
 ```
 
 ## 3.
